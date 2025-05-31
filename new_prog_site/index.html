@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Galaxy | Navegue pelo Universo da Programação</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Explore estratégias eficientes para aprender linguagens de programação com um design interativo e vídeos reais do YouTube.">
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <i class="fas fa-rocket header__logo-icon"></i>
+                <h1 class="header__logo-text">Code<span class="header__logo-text--highlight">Galaxy</span></h1>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#mission" class="header__menu-link">Missão</a></li>
+                    <li class="header__menu-item"><a href="#nebulae" class="header__menu-link">Nebulosas (Linguagens)</a></li>
+                    <li class="header__menu-item"><a href="#starmap" class="header__menu-link">Mapa Estelar (Roadmap)</a></li>
+                    <li class="header__menu-item"><a href="#observatory" class="header__menu-link">Observatório (Vídeos)</a></li>
+                    <li class="header__menu-item"><a href="#about" class="header__menu-link header__menu-link--highlight">Sobre</a></li>
+                </ul>
+            </nav>
+            <button class="header__mobile-toggle" aria-label="Menu">
+                <span class="header__mobile-toggle-bar"></span>
+                <span class="header__mobile-toggle-bar"></span>
+                <span class="header__mobile-toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h2 class="hero__title">Navegue pelo Universo da <span class="hero__title--highlight">Programação</span></h2>
+                <p class="hero__subtitle">Descubra rotas eficientes para aprender novas linguagens e tecnologias. Uma jornada pessoal pelas estrelas do código.</p>
+                <div class="hero__cta">
+                    <a href="#mission" class="hero__button hero__button--primary">Iniciar Missão</a>
+                    <a href="#observatory" class="hero__button hero__button--secondary">Explorar Observatório</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <!-- Placeholder for a cool space/code visual, maybe animated SVG or canvas -->
+                <div class="hero__planet"></div>
+                <div class="hero__orbit"></div>
+                <div class="hero__satellite"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section (Methods) -->
+    <section id="mission" class="mission">
+        <div class="mission__container">
+            <h2 class="section-title">Plano de Voo: Métodos Eficientes</h2>
+            <p class="section-subtitle">Estratégias testadas em campo para acelerar sua jornada de aprendizado.</p>
+            <div class="mission__grid">
+                <!-- Cards with neon borders/glow effects -->
+                <div class="mission__card">
+                    <div class="mission__card-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3 class="mission__card-title">Construção Modular (Projetos)</h3>
+                    <p class="mission__card-text">Assim como naves são construídas em módulos, aprenda construindo projetos. Comece pequeno, conecte as partes e veja a complexidade emergir.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__card-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="mission__card-title">Reforço de Sinal (Repetição Espaçada)</h3>
+                    <p class="mission__card-text">Revisite conceitos em intervalos crescentes para fortalecer as conexões neurais, garantindo que o conhecimento não se perca na vastidão do espaço.</p>
+                </div>
+                <div class="mission__card">
+                    <div class="mission__card-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <h3 class="mission__card-title">Transmissão de Dados (Ensinar)</h3>
+                    <p class="mission__card-text">Explicar o que você aprendeu solidifica o conhecimento. Tente ensinar um conceito a alguém (ou a um log de bordo!) para encontrar falhas no sinal.</p>
+                </div>
+                 <div class="mission__card">
+                    <div class="mission__card-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="mission__card-title">Missões Conjuntas (Open Source)</h3>
+                    <p class="mission__card-text">Colabore em projetos open source. Ler e contribuir com código de outros astronautas do código expõe você a novas técnicas e padrões.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nebulae Section (Languages) -->
+    <section id="nebulae" class="nebulae">
+        <div class="nebulae__container">
+            <h2 class="section-title section-title--light">Explorando Nebulosas (Linguagens)</h2>
+            <p class="section-subtitle section-subtitle--light">Cada linguagem é uma nebulosa única, com suas próprias estrelas e fenômenos.</p>
+            
+            <!-- Interactive Language Selector - Maybe a rotating cube or carousel -->
+            <div class="nebulae__selector">
+                <div class="nebulae__cube">
+                    <div class="nebulae__cube-face nebulae__cube-face--python" data-language="python">Python</div>
+                    <div class="nebulae__cube-face nebulae__cube-face--javascript" data-language="javascript">JavaScript</div>
+                    <div class="nebulae__cube-face nebulae__cube-face--java" data-language="java">Java</div>
+                    <div class="nebulae__cube-face nebulae__cube-face--csharp" data-language="csharp">C#</div>
+                </div>
+                <div class="nebulae__controls">
+                    <button class="nebulae__control-button nebulae__control-button--prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nebulae__control-button nebulae__control-button--next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="nebulae__content">
+                <!-- Content changes based on selected language -->
+                <div class="nebulae__language-info nebulae__language-info--python nebulae__language-info--active">
+                    <h3 class="nebulae__language-title">Nebulosa Python</h3>
+                    <p class="nebulae__language-description">Uma nebulosa conhecida por sua clareza e vasta extensão, ideal para iniciantes e exploradores de dados.</p>
+                    <ul class="nebulae__language-features">
+                        <li><i class="fas fa-check-circle"></i> Scripts de Automação</li>
+                        <li><i class="fas fa-check-circle"></i> Análise de Dados e IA</li>
+                        <li><i class="fas fa-check-circle"></i> Desenvolvimento Web (Django/Flask)</li>
+                    </ul>
+                </div>
+                <div class="nebulae__language-info nebulae__language-info--javascript">
+                    <h3 class="nebulae__language-title">Nebulosa JavaScript</h3>
+                    <p class="nebulae__language-description">A energia pulsante por trás da web interativa, essencial para explorar o front-end e além.</p>
+                     <ul class="nebulae__language-features">
+                        <li><i class="fas fa-check-circle"></i> Interatividade Web (DOM)</li>
+                        <li><i class="fas fa-check-circle"></i> Frameworks Modernos (React, Vue, Angular)</li>
+                        <li><i class="fas fa-check-circle"></i> Backend com Node.js</li>
+                    </ul>
+                </div>
+                 <div class="nebulae__language-info nebulae__language-info--java">
+                    <h3 class="nebulae__language-title">Nebulosa Java</h3>
+                    <p class="nebulae__language-description">Uma nebulosa robusta e madura, lar de grandes sistemas corporativos e aplicações Android.</p>
+                     <ul class="nebulae__language-features">
+                        <li><i class="fas fa-check-circle"></i> Sistemas Empresariais</li>
+                        <li><i class="fas fa-check-circle"></i> Desenvolvimento Android Nativo</li>
+                        <li><i class="fas fa-check-circle"></i> Ecossistema Forte (Spring)</li>
+                    </ul>
+                </div>
+                 <div class="nebulae__language-info nebulae__language-info--csharp">
+                    <h3 class="nebulae__language-title">Nebulosa C#</h3>
+                    <p class="nebulae__language-description">Uma nebulosa versátil no ecossistema Microsoft, poderosa para jogos e aplicações Windows.</p>
+                     <ul class="nebulae__language-features">
+                        <li><i class="fas fa-check-circle"></i> Desenvolvimento de Jogos (Unity)</li>
+                        <li><i class="fas fa-check-circle"></i> Aplicações Windows</li>
+                        <li><i class="fas fa-check-circle"></i> Plataforma .NET</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starmap Section (Roadmap) -->
+    <section id="starmap" class="starmap">
+        <div class="starmap__container">
+            <h2 class="section-title">Mapa Estelar: Sua Rota de Aprendizado</h2>
+            <p class="section-subtitle">Navegue pelas constelações do conhecimento, um passo de cada vez.</p>
+            <!-- Interactive constellation map -->
+            <div class="starmap__map">
+                <svg class="starmap__svg" viewBox="0 0 1000 400">
+                    <!-- Lines connecting stars -->
+                    <line class="starmap__path" x1="100" y1="200" x2="300" y2="100"/>
+                    <line class="starmap__path" x1="300" y1="100" x2="500" y2="200"/>
+                    <line class="starmap__path" x1="500" y1="200" x2="700" y2="100"/>
+                    <line class="starmap__path" x1="700" y1="100" x2="900" y2="200"/>
+                    
+                    <!-- Stars (clickable points) -->
+                    <g class="starmap__star-group" data-step="1">
+                        <circle class="starmap__star" cx="100" cy="200" r="15"/>
+                        <circle class="starmap__star-halo" cx="100" cy="200" r="20"/>
+                        <text class="starmap__star-label" x="100" y="240">Fundamentos</text>
+                    </g>
+                     <g class="starmap__star-group" data-step="2">
+                        <circle class="starmap__star" cx="300" cy="100" r="15"/>
+                        <circle class="starmap__star-halo" cx="300" cy="100" r="20"/>
+                         <text class="starmap__star-label" x="300" y="60">Primeiro Projeto</text>
+                    </g>
+                     <g class="starmap__star-group" data-step="3">
+                        <circle class="starmap__star" cx="500" cy="200" r="15"/>
+                        <circle class="starmap__star-halo" cx="500" cy="200" r="20"/>
+                         <text class="starmap__star-label" x="500" y="240">Intermediário</text>
+                    </g>
+                     <g class="starmap__star-group" data-step="4">
+                        <circle class="starmap__star" cx="700" cy="100" r="15"/>
+                        <circle class="starmap__star-halo" cx="700" cy="100" r="20"/>
+                         <text class="starmap__star-label" x="700" y="60">Colaboração</text>
+                    </g>
+                     <g class="starmap__star-group" data-step="5">
+                        <circle class="starmap__star" cx="900" cy="200" r="15"/>
+                        <circle class="starmap__star-halo" cx="900" cy="200" r="20"/>
+                         <text class="starmap__star-label" x="900" y="240">Especialização</text>
+                    </g>
+                </svg>
+                <div class="starmap__info-panel">
+                    <h3 class="starmap__info-title">Selecione uma estrela</h3>
+                    <p class="starmap__info-text">Clique em uma estrela para ver detalhes sobre essa etapa da jornada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Observatory Section (Videos) -->
+    <section id="observatory" class="observatory">
+        <div class="observatory__container">
+            <h2 class="section-title section-title--light">Observatório de Vídeos</h2>
+            <p class="section-subtitle section-subtitle--light">Sintonize transmissões do YouTube para visualizar conceitos em ação.</p>
+            
+            <div class="observatory__search">
+                <input type="text" class="observatory__search-input" placeholder="Buscar transmissões sobre..." id="videoSearchInput">
+                <select class="observatory__search-select" id="videoLanguageSelect">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Programa%C3%A7%C3%A3o">Programação Geral</option> <!-- URL Encoded 'Programação' -->
+                </select>
+                <button class="observatory__search-button" id="videoSearchButton">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+            
+            <div class="observatory__loading" id="videosLoading">
+                <div class="observatory__loading-spinner"></div>
+                <p class="observatory__loading-text">Sintonizando transmissões...</p>
+            </div>
+            
+            <div class="observatory__grid" id="videosGrid">
+                <!-- Videos will be loaded here -->
+                 <div class="observatory__placeholder">
+                    <i class="fas fa-satellite"></i>
+                    <p>Use o buscador para encontrar transmissões</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about__container">
+             <h2 class="section-title">Diário de Bordo</h2>
+             <div class="about__content">
+                <div class="about__text">
+                    <p>Olá, explorador! Sou apenas um colega navegante neste vasto universo do código, compartilhando as rotas e ferramentas que descobri em minhas viagens.</p>
+                    <p>Este site é um projeto pessoal, um mapa estelar das minhas próprias experiências de aprendizado, sem afiliações comerciais. Os vídeos no Observatório são transmissões reais do YouTube, selecionadas via API para complementar sua jornada (não tenho controle sobre o conteúdo deles).</p>
+                    <p>Espero que este guia ajude você a navegar com mais eficiência e confiança. Boa exploração!</p>
+                    <div class="about__social">
+                        <a href="https://github.com/carlossant77/" target="_blank" rel="noopener" class="about__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener" class="about__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <div class="about__astronaut"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">© 2025 CodeGalaxy - Navegando pelo Universo da Programação. Criado por um dev para devs.</p>
+            <a href="#" class="footer__back-to-top"><i class="fas fa-arrow-up"></i> Voltar ao Topo</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
