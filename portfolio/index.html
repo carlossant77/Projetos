@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>Carlos Santiago</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Apresentação com Espaço para Foto -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Olá, eu sou <span class="highlight">Carlos Santiago</span></h1>
+                    <h2>Desenvolvedor & Designer</h2>
+                    <p>Dedicado e Inovador. Soluciono problemas e desenvolvo ideias com criatividade e eficiência.</p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn primary">Ver Projetos</a>
+                        <a href="#contato" class="btn secondary">Contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="photo-frame">
+                        <div class="photo-container">
+                            <!-- Espaço para foto -->
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user"></i>
+                                <span><img src="/assets/perfil.jpg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="frame-decoration top-left"></div>
+                        <div class="frame-decoration top-right"></div>
+                        <div class="frame-decoration bottom-left"></div>
+                        <div class="frame-decoration bottom-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0a0a0a" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meus <span class="highlight">Projetos</span></h2>
+                <p>Conheça alguns dos meus trabalhos mais recentes</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                            <img src="/assets/projeto1.png" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dragon Ball TCG</h3>
+                        <p>Um jogo online de cartas baseado em Dragon Ball e Pokémon TCG.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">Ver Projeto</a>
+                            <a href="#" class="btn small secondary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                            <img src="/assets/projeto2.png" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site Informativo - GitHub</h3>
+                        <p>Site especializado na explicação do uso do GitHub para impulsionar a carreira DEV.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/carlossant77/Projetos/tree/main/github_landing_page" class="btn small">Ver Projeto</a>
+                            <a href="https://github.com/carlossant77/Projetos/blob/main/github_landing_page/index.html" class="btn small secondary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                            <img src="/assets/projeto3.png" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>CodeGalaxy</h3>
+                        <p>Site especializado na explicação de métodos de estudo de linguagens de programação.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>API's</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/carlossant77/Projetos/tree/main/new_prog_site" class="btn small">Ver Projeto</a>
+                            <a href="https://github.com/carlossant77/Projetos/blob/main/new_prog_site/index.html" class="btn small secondary">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Minhas <span class="highlight">Habilidades</span></h2>
+                <p>Competências e tecnologias que domino</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Desenvolvimento Front-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Design & Ferramentas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Figma</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Canva</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-universal-access"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Acessibilidade</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Design Responsivo</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato Criativa -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em <span class="highlight">Contato</span></h2>
+                <p>Vamos trabalhar juntos no seu próximo projeto</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>josesantiag2461@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>+55 (11) 95884-3874</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localização</h3>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/carlossant77" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h3>Envie uma mensagem</h3>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Portfólio</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Carlos Santiago. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu Toggle para dispositivos móveis
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        // Animação de rolagem suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
